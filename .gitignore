@@ -5,6 +5,8 @@ Examples/*/node_modules
 Examples/*/.pnp
 .pnp.js
 
+node_modules
+
 # testing
 Examples/*/coverage
 
