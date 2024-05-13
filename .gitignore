@@ -3,6 +3,7 @@
 # dependencies
 code/*/node_modules
 code/*/.pnp
+code/*/*/.vite
 .pnp.js
 
 node_modules

@@ -1,6 +1,8 @@
 import logo from "./assets/react-core-concepts.png";
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+import {User} from "./User.jsx";
 
+// Dynamic description
+const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
@@ -19,12 +21,14 @@ function Header() {
     </header>
   );
 }
+
 function App() {
   return (
     <div>
       <Header></Header>
       <main>
         <h2>Time to get started!</h2>
+        <User />
       </main>
     </div>
   );
