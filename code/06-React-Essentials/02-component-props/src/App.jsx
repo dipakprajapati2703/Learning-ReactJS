@@ -1,8 +1,8 @@
 import headerLogo from "./assets/react-core-concepts.png";
 import componentsImg from './assets/components.png';
-import { CORE_CONCEPTS } from './data.js';
+import { CORE_CONCEPTS , COURSE_GOAL} from './data.js';
 
-// Get dynamic description from `reactDescriptions` randomly on page load 
+// Get dynamic description from `reactDescriptions` randomly on page load
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
@@ -45,6 +45,15 @@ function CoreConcept2({ image, title, description }) {
   );
 }
 
+// Example:3 make the CourseGoal component reusable / configurable.
+function CourseGoal({ title, description }) {
+  return (
+    <li>
+      <h2>{title}</h2>
+      <p>{description}</p>
+    </li>
+  );
+}
 function App() {
   return (
     <div>
@@ -66,6 +75,14 @@ function App() {
             <CoreConcept2 {...CORE_CONCEPTS[1]} />
             <CoreConcept2 {...CORE_CONCEPTS[2]} />
           </ul>
+          <hr />
+          <h2>Course Goal</h2>
+          <ul>
+            <CourseGoal {...COURSE_GOAL[0]}></CourseGoal>
+            <CourseGoal {...COURSE_GOAL[1]}></CourseGoal>
+          </ul>
+          <hr />
+
         </section>
       </main>
     </div>
