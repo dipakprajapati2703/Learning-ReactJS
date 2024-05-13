@@ -22,3 +22,14 @@ export const CORE_CONCEPTS = [
       'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
 ];
+
+export const COURSE_GOAL = [
+  {
+    title: "Learn React",
+    description: "In -depth"
+  },
+  {
+    title: "Practice React",
+    description: "Practice react with component etc."
+  },
+];
