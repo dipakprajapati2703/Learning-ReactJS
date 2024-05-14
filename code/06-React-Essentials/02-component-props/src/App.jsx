@@ -4,6 +4,7 @@ import { CORE_CONCEPTS, COURSE_GOAL } from './data.js';
 import Header from "./components/Header/Header.jsx";
 import { CoreConcept, CoreConcept2 } from './components/CoreConcept/CoreConcept.jsx';
 import CourseGoal from './components/CourseGoal/CourseGoal.jsx';
+import { TabButton, TabButton2, TabButton3 } from './components/TabButton.jsx';
 
 function App() {
   return (
@@ -33,7 +34,14 @@ function App() {
             <CourseGoal {...COURSE_GOAL[1]}></CourseGoal>
           </ul>
           <hr />
-
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components/JSX</TabButton>
+            <TabButton2>Props</TabButton2>
+            <TabButton3 label="State"></TabButton3>
+          </menu>
         </section>
       </main>
     </div>
