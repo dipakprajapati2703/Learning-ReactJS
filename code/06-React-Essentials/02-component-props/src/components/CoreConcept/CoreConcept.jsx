@@ -1,3 +1,4 @@
+import './CoreConcept.css';
 // Example 1: Components props using single argument
 function CoreConcept(props) {
     return (
