@@ -1,63 +1,14 @@
-import headerLogo from "./assets/react-core-concepts.png";
+
 import componentsImg from './assets/components.png';
-import { CORE_CONCEPTS , COURSE_GOAL} from './data.js';
+import { CORE_CONCEPTS, COURSE_GOAL } from './data.js';
+import Header from "./components/Header.jsx";
+import { CoreConcept, CoreConcept2 } from './components/CoreConcept.jsx';
+import CourseGoal from './components/CourseGoal.jsx';
 
-// Get dynamic description from `reactDescriptions` randomly on page load
-const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
-
-// Create Header component
-function Header() {
-  const description = reactDescriptions[genRandomInt(2)];
-  return (
-    <header>
-      <img src={headerLogo} alt="Stylized atom" />
-      <h1>React Essentials</h1>
-      <p>
-        {description} React concepts you will need for almost any app you are
-        going to build!
-      </p>
-    </header>
-  );
-}
-
-// Example 1: Components props using single argument
-function CoreConcept(props) {
-  return (
-    <li>
-      <img src={props.image} alt={props.title} />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </li>
-  );
-}
-
-// Example 2: Components props using multiple arguments
-function CoreConcept2({ image, title, description }) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
-
-// Example:3 make the CourseGoal component reusable / configurable.
-function CourseGoal({ title, description }) {
-  return (
-    <li>
-      <h2>{title}</h2>
-      <p>{description}</p>
-    </li>
-  );
-}
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
