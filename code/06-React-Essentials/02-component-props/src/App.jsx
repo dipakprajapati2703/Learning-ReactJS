@@ -1,9 +1,9 @@
 
 import componentsImg from './assets/components.png';
 import { CORE_CONCEPTS, COURSE_GOAL } from './data.js';
-import Header from "./components/Header.jsx";
-import { CoreConcept, CoreConcept2 } from './components/CoreConcept.jsx';
-import CourseGoal from './components/CourseGoal.jsx';
+import Header from "./components/Header/Header.jsx";
+import { CoreConcept, CoreConcept2 } from './components/CoreConcept/CoreConcept.jsx';
+import CourseGoal from './components/CourseGoal/CourseGoal.jsx';
 
 function App() {
   return (

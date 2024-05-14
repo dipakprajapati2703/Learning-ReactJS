@@ -3,7 +3,8 @@
  * Get dynamic description from `reactDescriptions` randomly on page load
  */
 
-import headerLogo from "../assets/react-core-concepts.png";
+import headerLogo from "../../assets/react-core-concepts.png";
+import "./Header.css";
 
 const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
 function genRandomInt(max) {
