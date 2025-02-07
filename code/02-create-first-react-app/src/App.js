@@ -29,6 +29,11 @@ const content = [
   ],
 ];
 
+const reactDescription = ["Fundamental", "Core", "Popular", "Flexible"];
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max + 1);
+}
 export default function App() {
   const [activeContentIndex, setActiveContentIndex] = useState(0);
 
@@ -77,6 +82,11 @@ export default function App() {
           </ul>
         </div>
       </div>
+      <footer>
+        <p>
+          <strong>React.js</strong> is {reactDescription[getRandomInt(3)]}
+        </p>
+        </footer>
     </div>
   );
 }
